@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import os, time
-# Hàm pause
+
+# Hàm pause
 def pause():
     input("\nNhấn Enter để tiếp tục...")
-# ===== Màu ANSI =====
+
+# ===== Màu ANSI =====
 RESET = "\033[0m"; BOLD  = "\033[1m"
 RED   = "\033[31m"; GREEN = "\033[32m"; YEL   = "\033[33m"
 BLUE  = "\033[34m"; MAG   = "\033[35m"; CYAN  = "\033[36m"; WHITE = "\033[37m"
@@ -1528,7 +1530,6 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 print('\033[1;32m SPAM')
 print('\033[0m')  # Reset màu
-print("Tắt tool bấm Ctr + C 2lần")
 
 
 
@@ -4878,7 +4879,7 @@ def send_otp_with_delay(func, phone, delay):
     time.sleep(delay)
 
 # Lấy số điện thoại và độ trễ từ dòng lệnh
-phone = input("Nhập sdt để LNX spam: ")
+phone = input("Nhập sdt để bạn muốn spam😎: ")
 delay = float(5)
 repeat_count = int(input("Nhập số lần spam: "))
  # Số lần gửi OTP
@@ -4933,7 +4934,7 @@ def send_otp_with_delay(func, phone):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("⚠️ Thiếu số điện thoại.")
+        print("⚠️ sai số điện thoại.")
         sys.exit(1)
 
     phone = sys.argv[1]
@@ -5046,4 +5047,5 @@ def main_menu():
 
 if __name__ == "__main__":
     if check_key():  # Bỏ key thì đổi thành if True:
+
         main_menu()
