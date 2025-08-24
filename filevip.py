@@ -4872,9 +4872,9 @@ def send_otp_with_delay(func, phone, delay):
     time.sleep(delay)
 
 # Lấy số điện thoại và độ trễ từ dòng lệnh
-phone = input("Nhập sdt để giây spam: ")
+phone = input("Nhập sdt mà bạn muốn spam: ")
 delay = float(5)
-repeat_count = int(input("Nhập số lần spam: "))
+repeat_count = int(input("Nhập số giây spam: "))
  # Số lần gửi OTP
 
 # Tạo danh sách các hàm OTP
@@ -5042,3 +5042,4 @@ if __name__ == "__main__":
     if check_key():  # Bỏ key thì đổi thành if True:
 
         main_menu()
+
